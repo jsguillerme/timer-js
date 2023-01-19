@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quantico', sans-serif;
+    background-color: #232323;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.circulo {
+    width: 600px;
+    height: 600px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.mainData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+}
+
+.timer {
+    font-size: 100px;
+    color: white
+}
+
+.data {
+    font-size: 30px;
+    color: white;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px
+}
+
+.controls button{
+    font-size: 24px;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 8px;
+    background-color: #232323;
+}
+
+.controls button:hover {
+    border: 1px solid white;
+    color: rgb(219, 219, 219);
+    background-color: #3f3f3f;
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed !important;
+}
